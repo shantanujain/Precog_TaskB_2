@@ -3,8 +3,7 @@
 ## Steps
 
 * Scraped images of Narendra Modi and Arvind Kejriwal from Google
-* Used dlib for face detection and recognition
-* dlib extracts features of the face (mouth, eyebrow, eyes, nose, jaw) which can be compared with test images for predictions
+* Extracted features of the face (mouth, eyebrow, eyes, nose, jaw) using dlib which can be compared with test images to predict Kejriwal/Modi
 
 ## Prerequisites
 
