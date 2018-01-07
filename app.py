@@ -21,14 +21,13 @@ face_recognizer = dlib.face_recognition_model_v1(FACEREC_MODEL_PATH)
 
 threshold = 0.58
 
-def compute_distance(known_faces, face):
-	x = np.linalg.norm(known_faces - face)
+def compute_distance(test, face):
+	x = np.linalg.norm(test - face)
 	print (x)
 	return (x <= threshold)
 
-# Below function returns the face encodings through neural network
-def face_encodings(path_to_image):
-	image = cv2.imread(path_to_image)
+def face_encodings(path):
+	image = cv2.imread(path)
 	detected_faces = face_detector(image, 1)
 
 	shapes = [shape_predictor(image, face) for face in detected_faces]
@@ -36,7 +35,7 @@ def face_encodings(path_to_image):
 
 def face_encodings1(image, face):
 	shapes = shape_predictor(image, face)
-	# computing the face encodings
+
 	return np.array(face_recognizer.compute_face_descriptor(image, shapes, 1))
  
 @app.route('/')
