@@ -1,24 +1,5 @@
 # Precog_TaskB
 
-## Steps
-
-* Scraped images of Narendra Modi and Arvind Kejriwal from Google
-* Extracted features of the face (mouth, eyebrow, eyes, nose, jaw) using dlib which can be compared with test images to predict Kejriwal/Modi
-
-## Prerequisites
-
-* Flask
-* OpenCV
-* dlib
-* numpy
-
-## To Run
-
-```shell
-python app.py
-python detect.py *path-to-image*
-```
-
 ## Test Cases
 
 <p align="center">
@@ -41,3 +22,22 @@ python detect.py *path-to-image*
   <img src="https://raw.githubusercontent.com/shantanujain/Precog_TaskB_2/master/samples/sample5.png" width="50%" >
 </p>
 
+
+## Steps
+
+* Scraped images of Narendra Modi and Arvind Kejriwal from Google
+* Extracted features of the face (mouth, eyebrow, eyes, nose, jaw) using dlib which can be compared with test images to predict Kejriwal/Modi
+
+## Prerequisites
+
+* Flask
+* OpenCV
+* dlib
+* numpy
+
+## To Run
+
+```shell
+python app.py
+python detect.py *path-to-image*
+```
